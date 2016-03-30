@@ -17,6 +17,7 @@ public class SpinachAlfredo extends Pizza
 		ArrayList<String> toppings = new ArrayList<String>();
 		
 		toppings.add("Spinach");
+		toppings.add("Bowtie Noodles");
 		
 		return toppings;
 	}

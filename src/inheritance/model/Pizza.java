@@ -2,7 +2,7 @@ package inheritance.model;
 
 import java.util.ArrayList;
 
-public abstract class Pizza
+public abstract class Pizza implements Food
 {
 	private ArrayList<String> toppings;
 	private String sauce;
