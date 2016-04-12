@@ -40,4 +40,11 @@ public abstract class Pizza implements Food
 	{
 		this.cheese = cheese;
 	}
+	
+	public String toString()
+	{
+		String pizzaDescription = "This is a Pizza Object of type " + this.getClass().getName() + " and has a Cheese of type " + getCheese();
+		
+		return pizzaDescription;
+	}
 }

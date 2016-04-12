@@ -32,6 +32,10 @@ public class FourMeat extends Pizza
 	
 	public boolean isHealthy(ArrayList<String> ingredients)
 	{
+		if(ingredients.contains("Bacon") != true)
+		{
+			return true;
+		}
 		return false;
 	}
 	

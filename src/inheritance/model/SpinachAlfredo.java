@@ -21,5 +21,41 @@ public class SpinachAlfredo extends Pizza
 		
 		return toppings;
 	}
+	
+
+	public int calorieCounter(int calories)
+	{
+		return calories * 10;
+	}
+	
+	public boolean isSpicy(ArrayList<String> ingredients)
+	{
+		for(String ingredient : ingredients)
+		{
+			for(String topping : getToppings())
+			{
+				if(ingredient.equalsIgnoreCase(topping))
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	public boolean isHealthy(ArrayList<String> ingredients)
+	{
+		return true;
+	}
+	
+	public boolean isCheezy(ArrayList<String> ingredients)
+	{
+		return true;
+	}
+	
+	public int deliciousness(int criticRating)
+	{
+		return criticRating * 2;
+	}
 
 }
