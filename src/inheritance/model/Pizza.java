@@ -7,6 +7,7 @@ public abstract class Pizza implements Food
 	private ArrayList<String> toppings;
 	private String sauce;
 	private String cheese;
+	public int criticRating;
 	
 	public Pizza()
 	{
@@ -46,5 +47,27 @@ public abstract class Pizza implements Food
 		String pizzaDescription = "This is a Pizza Object of type " + this.getClass().getName() + " and has a Cheese of type " + getCheese();
 		
 		return pizzaDescription;
+	}
+	
+	int compareTo(Object compared)
+	{
+		int comparedValue = Integer.MIN_VALUE;
+		
+		if(compared instanceof Food)
+		{
+			if(this.deliciousness(this.criticRating) < ((Food) compared).deliciousness(this.criticRating))
+			{
+				comparedValue = -1;
+			}
+			else if(this.deliciousness(this.criticRating) > ((Food) compared).deliciousness(this.criticRating))
+			{
+				comparedValue = 1;
+			}
+			else
+			{
+				comparedValue = 0;
+			}
+		}
+		return comparedValue;
 	}
 }

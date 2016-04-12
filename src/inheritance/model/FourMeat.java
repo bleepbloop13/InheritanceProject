@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class FourMeat extends Pizza
 {
+
+	
 	public FourMeat()
 	{
 		super();
+		this.criticRating = 4;
 		this.setToppings(fourMeatToppings());
 	}
 	

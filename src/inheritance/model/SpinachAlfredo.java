@@ -7,6 +7,7 @@ public class SpinachAlfredo extends Pizza
 	public SpinachAlfredo()
 	{
 		super();
+		this.criticRating = 3;
 		this.setCheese("Parmesan");
 		this.setSauce("Alfredo");
 		this.setToppings(spinachAlfredoToppings());

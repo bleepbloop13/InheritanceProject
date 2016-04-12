@@ -7,7 +7,7 @@ import java.util.ArrayList;
  *
  */
 public interface Food
-{
+{	
 	boolean isCheezy(ArrayList<String> ingredients);
 	
 	boolean isHealthy(ArrayList<String> ingredients);
