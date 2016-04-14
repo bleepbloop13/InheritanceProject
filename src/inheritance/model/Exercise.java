@@ -40,7 +40,7 @@ public abstract class Exercise implements Food
 		return excersizeDescription;
 	}
 	
-	int compareTo(Object compared)
+	public int compareTo(Object compared)
 	{
 		int comparedValue = Integer.MIN_VALUE;
 		

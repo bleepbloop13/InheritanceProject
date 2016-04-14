@@ -49,7 +49,7 @@ public abstract class Pizza implements Food
 		return pizzaDescription;
 	}
 	
-	int compareTo(Object compared)
+	public int compareTo(Object compared)
 	{
 		int comparedValue = Integer.MIN_VALUE;
 		

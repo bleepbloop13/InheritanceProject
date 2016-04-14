@@ -44,7 +44,7 @@ public abstract class Kpop implements Food
 	 * someSoup.compareTo(otherSoup);
 	 */
 	
-	int compareTo(Object compared)
+	public int compareTo(Object compared)
 	{
 		int comparedValue = Integer.MIN_VALUE;
 		

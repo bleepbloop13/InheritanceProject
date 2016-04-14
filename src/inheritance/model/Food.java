@@ -17,4 +17,6 @@ public interface Food
 	int calorieCounter(int calories);
 	
 	int deliciousness(int criticRating);
+	
+	int compareTo(Object compared);
 }
