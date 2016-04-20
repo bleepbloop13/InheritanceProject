@@ -19,4 +19,6 @@ public interface Food
 	int deliciousness(int criticRating);
 	
 	int compareTo(Object compared);
+	
+	int getCriticRating();
 }

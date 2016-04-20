@@ -14,12 +14,11 @@ public class PizzaController
 	public PizzaController()
 	{
 		pFrame = new PizzaFrame(this);
-		buildFoods();
 	}
 	
 	public void start()
 	{
-		
+		buildFoods();
 	}
 	
 	private void buildFoods()
@@ -48,6 +47,16 @@ public class PizzaController
 				innerLoop--;
 			}
 		}
+	}
+	
+	public String showFoods()
+	{
+		String foodDescription = "";
+		for(Food currentFood : foods)
+		{
+			foodDescription += ("This is a " + currentFood.toString() + " and has a critic rating of " + currentFood.deliciousness(currentFood.getCriticRating()) + "\n");
+		}
+		return foodDescription;
 	}
 	
 	public void quicksort(int low, int high)

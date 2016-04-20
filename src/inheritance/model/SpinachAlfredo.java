@@ -59,4 +59,8 @@ public class SpinachAlfredo extends Pizza
 		return criticRating * 2;
 	}
 
+	public int getCriticRating()
+	{
+		return this.criticRating;
+	}
 }

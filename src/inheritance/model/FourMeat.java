@@ -63,4 +63,9 @@ public class FourMeat extends Pizza
 		
 		return toppings;
 	}
+	
+	public int getCriticRating()
+	{
+		return this.criticRating;
+	}
 }

@@ -55,4 +55,8 @@ public class SHINee extends Kpop
 		return criticRating;
 	}
 
+	public int getCriticRating()
+	{
+		return this.criticRating;
+	}
 }

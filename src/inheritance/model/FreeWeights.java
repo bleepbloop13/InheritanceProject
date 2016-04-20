@@ -57,5 +57,8 @@ public class FreeWeights extends Exercise
 		return criticRating;
 	}
 	
-
+	public int getCriticRating()
+	{
+		return this.criticRating;
+	}
 }
