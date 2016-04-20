@@ -11,6 +11,7 @@ public abstract class Pizza implements Food
 	
 	public Pizza()
 	{
+		this.toppings = new ArrayList<String>();
 		this.toppings.add("None");
 		this.sauce = "Marinara";
 		this.cheese = "Mozzarella";

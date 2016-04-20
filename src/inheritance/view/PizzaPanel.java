@@ -19,7 +19,7 @@ public class PizzaPanel extends JPanel
 	{
 		this.baseController = baseController;
 		baseLayout = new SpringLayout();
-		sortArea = new JTextArea("The sorted list appears here.");
+		sortArea = new JTextArea(baseController.showFoods());
 		sortButton = new JButton("Sort objects by rating");
 		
 		setupPanel();
@@ -60,7 +60,7 @@ public class PizzaPanel extends JPanel
 			public void actionPerformed(ActionEvent click)
 			{
 				baseController.insertionSort();
-				sortArea.setText(baseController.getFoods().toString());
+				sortArea.setText(baseController.showFoods());
 			}
 		});
 	}

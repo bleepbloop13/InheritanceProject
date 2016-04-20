@@ -13,12 +13,14 @@ public class PizzaController
 	
 	public PizzaController()
 	{
+		this.foods = new ArrayList<Food>();
+		buildFoods();
 		pFrame = new PizzaFrame(this);
 	}
 	
 	public void start()
 	{
-		buildFoods();
+		
 	}
 	
 	private void buildFoods()
@@ -27,6 +29,7 @@ public class PizzaController
 		foods.add(new SHINee());
 		foods.add(new FourMeat());
 		foods.add(new SpinachAlfredo());
+		foods.add(new Panini());
 	}
 	
 	private void swap(int firstLocation, int secondLocation)
