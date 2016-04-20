@@ -2,7 +2,7 @@ package inheritance.controller;
 
 import java.util.ArrayList;
 
-import inheritance.model.Food;
+import inheritance.model.*;
 import inheritance.view.PizzaFrame;
 
 public class PizzaController
@@ -14,11 +14,20 @@ public class PizzaController
 	public PizzaController()
 	{
 		pFrame = new PizzaFrame(this);
+		buildFoods();
 	}
 	
 	public void start()
 	{
 		
+	}
+	
+	private void buildFoods()
+	{
+		foods.add(new FreeWeights());
+		foods.add(new SHINee());
+		foods.add(new FourMeat());
+		foods.add(new SpinachAlfredo());
 	}
 	
 	private void swap(int firstLocation, int secondLocation)
@@ -66,6 +75,11 @@ public class PizzaController
 		swap(position, high);
 		
 		return position;
+	}
+	
+	public ArrayList<Food> getFoods()
+	{
+		return this.foods;
 	}
 }
 

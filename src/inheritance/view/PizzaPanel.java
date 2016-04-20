@@ -42,7 +42,12 @@ public class PizzaPanel extends JPanel
 	 */
 	private void setupLayout()
 	{
-
+		baseLayout.putConstraint(SpringLayout.NORTH, sortArea, 24, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, sortArea, 46, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, sortArea, 216, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, sortArea, 361, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.WEST, sortButton, 107, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, sortButton, -10, SpringLayout.SOUTH, this);
 	}
 
 	/**
@@ -54,7 +59,8 @@ public class PizzaPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				
+				baseController.insertionSort();
+				sortArea.setText(baseController.getFoods().toString());
 			}
 		});
 	}
